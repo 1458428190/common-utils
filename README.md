@@ -40,6 +40,7 @@ Object bean = XMLUtils.getBean(filePath, beanId);
     long count = 10;
     long maxNum = 5;
     long totalPage = getTotalpag e(count , maxNum);
+    long totalPage = getTotalpage(count , maxNum);
 ```
 2.getStart(long page , long maxNum)：根据当前页数,每页显示个数 计算表中数据的起始行
 ```java
