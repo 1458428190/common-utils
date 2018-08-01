@@ -39,7 +39,7 @@ Object bean = XMLUtils.getBean(filePath, beanId);
 ```java
     long count = 10;
     int maxNum = 5;
-    int totalPage = getTotalpage(count , maxNum);
+    int totalPage = getTotalpag e(count , maxNum);
 ```
 2.getStart(int page , int maxNum)：根据当前页数,每页显示个数 计算表中数据的起始行
 ```java
@@ -48,3 +48,7 @@ Object bean = XMLUtils.getBean(filePath, beanId);
     int start  = getStart(page  , maxNum);
     List<xxx> lists = xxxDao.getXXX(start , maxNum);
 ```
+### OkHttpUtils (OkHttp工具)
+1. public static void syncGet(String url) 同步Get操作
+2. public static void asyncGet(String url) 异步Get请求
+3. public static void timeOutPost(String url) 设置超时
