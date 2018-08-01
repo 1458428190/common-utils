@@ -38,13 +38,13 @@ Object bean = XMLUtils.getBean(filePath, beanId);
 1.getTotalPage( long count , int maxNum): 根据数据总数,每页显示个数 统计总页数
 ```java
     long count = 10;
-    int maxNum = 5;
-    int totalPage = getTotalpage(count , maxNum);
+    long maxNum = 5;
+    long totalPage = getTotalpage(count , maxNum);
 ```
 2.getStart(int page , int maxNum)：根据当前页数,每页显示个数 计算表中数据的起始行
 ```java
-    int page = 2;
-    int maxNum = 5;
-    int start  = getStart(page  , maxNum);
+    long page = 2;
+    long maxNum = 5;
+    long start  = getStart(page  , maxNum);
     List<xxx> lists = xxxDao.getXXX(start , maxNum);
 ```
