@@ -50,6 +50,17 @@ Object bean = XMLUtils.getBean(filePath, beanId);
     List<xxx> lists = xxxDao.getXXX(start , maxNum);
 ```
 ### OkHttpUtils (OkHttp工具)
+导入以下依赖(maven):
+```
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.6.0</version>
+        </dependency>
+```
 1. public static void syncGet(String url) 同步Get操作
 2. public static void asyncGet(String url) 异步Get请求
 3. public static void timeOutPost(String url) 设置超时
+
+### FileUtils (inputStream 转换成 byte[]工具)
+1.  public static final byte[] toBytes(InputStream inStream)
