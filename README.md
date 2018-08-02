@@ -52,11 +52,11 @@ Object bean = XMLUtils.getBean(filePath, beanId);
 ### OkHttpUtils (OkHttp工具)
 导入以下依赖(maven):
 ```
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>3.6.0</version>
-        </dependency>
+    <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>3.6.0</version>
+    </dependency>
 ```
 1. public static void syncGet(String url) 同步Get操作
 2. public static void asyncGet(String url) 异步Get请求
@@ -74,7 +74,7 @@ Object bean = XMLUtils.getBean(filePath, beanId);
 2. public static Date formatStrToDate(String dateStr, String patten) 将时间转化成
 Date格式,第二个参数在DateUtils有定义
 ```Java
-        String date2="2018-06-19 13:49:59";
-        Date a=DateUtils.formatStrToDate(date2,DateUtils.datetime_2);
-        System.out.println(a.getTime()); //获取毫秒数
+    String date2="2018-06-19 13:49:59";
+    Date a=DateUtils.formatStrToDate(date2,DateUtils.datetime_2);
+    System.out.println(a.getTime()); //获取毫秒数
 ```
