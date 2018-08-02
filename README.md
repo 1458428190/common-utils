@@ -64,3 +64,17 @@ Object bean = XMLUtils.getBean(filePath, beanId);
 
 ### FileUtils (inputStream 转换成 byte[]工具)
 1.  public static final byte[] toBytes(InputStream inStream)
+
+### DateUtils (时间工具类工具)
+1. public static String getDateString(Long time) 将毫秒数变成时间(yyyy-MM-dd HH:mm:ss),里面有各种时间格式，可以定制化Date格式。
+```Java
+    Long time = System.currentTimeMillis();
+    String date = DateUtils.getDateString(time);
+```
+2. public static Date formatStrToDate(String dateStr, String patten) 将时间转化成
+Date格式,第二个参数在DateUtils有定义
+```Java
+        String date2="2018-06-19 13:49:59";
+        Date a=DateUtils.formatStrToDate(date2,DateUtils.datetime_2);
+        System.out.println(a.getTime()); //获取毫秒数
+```
