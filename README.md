@@ -64,3 +64,13 @@ Object bean = XMLUtils.getBean(filePath, beanId);
 
 ### FileUtils (inputStream 转换成 byte[]工具)
 1.  public static final byte[] toBytes(InputStream inStream)
+
+### HttpUtils (Http请求工具)
+1. public static get(String url, Map<String, Object> params, Map<String, Object> headers, HttpHost proxy, String charset)
+
+2. public static post(String url, Map<String, Object> params, Map<String, Object> headers, HttpHost proxy, String charset)
+
+### HttpProxyUtils (Http代理请求工具，可用于抓取大数据，但需要提供ip池)
+1. public static String get(String url, Map<String, Object> params, Map<String, Object> headers, String charset)
+
+2. public static String post(String url, Map<String, Object> params, Map<String, Object> headers, String charset)
