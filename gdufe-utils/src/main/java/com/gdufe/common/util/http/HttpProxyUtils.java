@@ -1,9 +1,3 @@
-/**
- * @(#)HttpProxyUtils.java, 2018/10/26.
- * <p/>
- * Copyright 2018 Netease, Inc. All rights reserved.
- * NETEASE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
 package com.gdufe.common.util.http;
 
 import org.apache.http.HttpException;
@@ -16,7 +10,7 @@ import com.alibaba.fastjson.JSON;
 import com.gdufe.common.util.http.domain.ProxyInfo;
 
 /**
- * @author: laichengfeng (laichengfeng @ corp.netease.com)
+ * @author: laichengfeng
  * @description: 代理Http工具类， 依赖于http://3c.163.com/spider-ipPool/list.do, 默认走代理 （可继承此类重写）
  * @Date: 2018/10/26 14:35
  */
